@@ -1,0 +1,552 @@
+2024-12-10 23:46:45,880 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-10 23:46:45,951 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-10 23:46:45,951 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-10 23:47:01,979 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-10 23:47:02,469 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-10 23:47:04,924 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-10 23:50:21,913 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-10 23:50:21,917 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-10 23:50:21,917 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-10 23:50:26,249 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-10 23:50:29,753 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-10 23:50:31,471 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-10 23:50:31,473 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-10 23:50:31,474 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-10 23:50:31,476 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-10 23:50:31,482 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x1027d1160>], 'start_parameter': 'payment', 'need_name': True, 'need_email': True}
+2024-12-10 23:50:31,759 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-10 23:52:10,706 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067201028109771
+2024-12-10 23:52:10,711 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-10 23:52:10,716 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067201028109771
+2024-12-10 23:52:12,848 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-10 23:52:12,849 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2eea857b-000f-5000-8000-1335d3356838', 'telegram_payment_charge_id': '8021225335_6916276950_30871', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 10, 23, 52, 12, 849561)}
+2024-12-10 23:52:12,850 - PaymentBot - ERROR - Ошибка обработки успешного платежа: 'DatabaseManager' object has no attribute 'save_payment'
+Traceback (most recent call last):
+  File "/Users/a123/Documents/test_bot/src/handlers/payment.py", line 246, in handle_successful_payment
+    self.db_manager.save_payment(payment_info)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabaseManager' object has no attribute 'save_payment'
+2024-12-10 23:54:29,820 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-10 23:54:30,277 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-10 23:54:32,028 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-10 23:54:32,030 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-10 23:54:32,031 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-10 23:54:32,032 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-10 23:54:32,051 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x10402efd0>], 'start_parameter': 'payment', 'need_name': True, 'need_email': True}
+2024-12-10 23:54:32,413 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-11 00:17:32,339 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-11 00:17:32,350 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-11 00:17:32,350 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-11 00:17:43,594 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-11 00:17:43,995 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-11 00:17:47,246 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-11 00:17:47,247 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-11 00:17:47,248 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-11 00:17:47,248 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-11 00:17:47,248 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x1101dd160>], 'start_parameter': 'payment', 'need_name': True, 'need_email': True}
+2024-12-11 00:17:47,478 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-11 00:18:31,712 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067202638389425
+2024-12-11 00:18:31,715 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-11 00:18:31,716 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067202638389425
+2024-12-11 00:18:34,068 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-11 00:18:34,070 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2eea8ba8-000f-5000-b000-145aa6c05e5b', 'telegram_payment_charge_id': '8021225335_6916276950_30892', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 11, 0, 18, 34, 70618)}
+2024-12-11 00:18:34,071 - PaymentBot - ERROR - Ошибка обработки успешного платежа: 'DatabaseManager' object has no attribute 'save_payment'
+Traceback (most recent call last):
+  File "/Users/a123/Documents/test_bot/src/handlers/payment.py", line 246, in handle_successful_payment
+    self.db_manager.save_payment(payment_info)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabaseManager' object has no attribute 'save_payment'
+2024-12-11 00:34:22,598 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-11 00:34:22,601 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-11 00:34:22,602 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-11 00:46:36,347 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-11 00:46:37,470 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-11 00:46:39,165 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-11 00:46:39,166 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-11 00:46:39,167 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-11 00:46:39,168 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-11 00:46:39,176 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x10c599160>], 'start_parameter': 'payment', 'need_name': True, 'need_email': True}
+2024-12-11 00:46:39,416 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-11 00:47:34,172 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067201432174134
+2024-12-11 00:47:34,174 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-11 00:47:34,175 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067201432174134
+2024-12-11 00:47:36,043 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-11 00:47:36,044 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2eea9276-000f-5000-b000-14617c77cb65', 'telegram_payment_charge_id': '8021225335_6916276950_30900', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 11, 0, 47, 36, 44070)}
+2024-12-11 00:47:36,067 - PaymentBot - INFO - Платёж сохранен в базе данных
+2024-12-11 00:47:36,077 - PaymentBot - INFO - Генерации начислены пользователю 6916276950
+2024-12-11 00:47:36,438 - PaymentBot - INFO - Успешное завершение обработки платежа для пользователя 6916276950
+2024-12-11 00:48:59,050 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-11 00:48:59,397 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-11 01:09:27,701 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-11 01:09:27,704 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-11 01:09:27,707 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-11 01:09:42,243 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-11 01:09:43,127 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-11 01:09:51,458 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-11 01:09:51,460 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-11 01:09:51,461 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-11 01:09:51,461 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-11 01:09:51,463 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x107c21160>], 'start_parameter': 'payment'}
+2024-12-11 01:09:51,818 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-11 14:04:50,868 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-11 14:04:50,929 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-11 14:04:50,930 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 07:56:58,232 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 07:56:58,233 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 07:56:58,234 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 08:04:38,512 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 08:04:38,512 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 08:04:38,513 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 08:06:10,474 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-13 08:06:10,737 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-13 08:06:12,316 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-13 08:06:12,319 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-13 08:06:12,319 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-13 08:06:12,319 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-13 08:06:12,320 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x74e0fdea5ac0>], 'start_parameter': 'payment'}
+2024-12-13 08:06:12,429 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-13 08:19:19,821 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 08:19:19,821 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 08:19:19,822 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 08:21:20,757 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 08:21:20,758 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 08:21:20,758 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 08:23:05,123 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 08:23:05,123 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 08:23:05,123 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 08:24:13,712 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-13 08:24:13,817 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-13 08:30:23,186 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 08:30:23,187 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 08:30:23,188 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 08:30:43,731 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 08:30:43,731 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 08:30:43,731 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 08:35:06,565 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 08:35:06,566 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 08:35:06,566 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 08:38:25,734 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 08:38:25,734 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 08:38:25,735 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 08:39:02,188 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-13 08:39:02,377 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-13 08:39:48,362 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-13 08:39:48,495 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-13 08:39:50,466 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-13 08:39:50,469 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-13 08:39:50,469 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-13 08:39:50,470 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-13 08:39:50,470 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x75abf869cc80>], 'start_parameter': 'payment'}
+2024-12-13 08:39:50,540 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-13 09:17:17,525 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 09:17:17,527 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 09:17:17,527 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 10:29:28,918 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-13 10:29:29,056 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-13 10:54:26,417 - PaymentBot - INFO - Показ тарифов для пользователя 341615899
+2024-12-13 10:54:26,483 - PaymentBot - INFO - Тарифы успешно показаны пользователю 341615899
+2024-12-13 10:54:35,915 - PaymentBot - INFO - Показ тарифов для пользователя 77532705
+2024-12-13 10:54:35,971 - PaymentBot - INFO - Тарифы успешно показаны пользователю 77532705
+2024-12-13 10:54:37,508 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-13 10:54:37,509 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 77532705
+2024-12-13 10:54:37,511 - PaymentBot - INFO - Пользователь 77532705 выбрал тариф: Базовый
+2024-12-13 10:54:37,511 - PaymentBot - INFO - Создание счета для пользователя 77532705, план: Базовый
+2024-12-13 10:54:37,512 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 77532705, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7d0106cc75f0>], 'start_parameter': 'payment'}
+2024-12-13 10:54:37,570 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 77532705
+2024-12-14 08:45:16,637 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 08:45:16,697 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 08:45:20,600 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-14 08:45:20,600 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 08:45:20,600 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-14 08:45:20,600 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-14 08:45:20,601 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7d0106fa8aa0>], 'start_parameter': 'payment'}
+2024-12-14 08:45:20,713 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 09:08:56,659 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:08:56,660 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:08:56,661 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:10:06,005 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:10:06,006 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:10:06,006 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:10:18,270 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 09:10:18,422 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 09:10:21,531 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-14 09:10:21,533 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 09:10:21,534 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-14 09:10:21,534 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-14 09:10:21,534 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7cd42d904c80>], 'start_parameter': 'payment'}
+2024-12-14 09:10:21,778 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 09:11:13,257 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067199835372709
+2024-12-14 09:11:13,261 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-14 09:11:13,261 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067199835372709
+2024-12-14 09:11:32,388 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-14 09:11:32,392 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2eef5161-000f-5000-8000-19addae26a39', 'telegram_payment_charge_id': '8021225335_6916276950_31655', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 14, 9, 11, 32, 392766)}
+2024-12-14 09:11:32,393 - PaymentBot - ERROR - Ошибка обработки успешного платежа: 'DatabaseManager' object has no attribute 'save_payment'
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 244, in handle_successful_payment
+    self.db_manager.save_payment(payment_info)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabaseManager' object has no attribute 'save_payment'
+2024-12-14 09:31:01,460 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:31:01,462 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:31:01,463 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:32:10,389 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:32:10,389 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:32:10,390 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:32:43,473 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 09:32:43,727 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 09:32:47,088 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-14 09:32:47,091 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 09:32:47,091 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-14 09:32:47,093 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-14 09:32:47,094 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x76d93f3891c0>], 'start_parameter': 'payment'}
+2024-12-14 09:32:47,239 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 09:33:33,306 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067201997614154
+2024-12-14 09:33:33,311 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-14 09:33:33,312 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067201997614154
+2024-12-14 09:33:44,362 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-14 09:33:44,369 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2eef569d-000f-5000-8000-1c563eecb7c4', 'telegram_payment_charge_id': '8021225335_6916276950_31661', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 14, 9, 33, 44, 368917)}
+2024-12-14 09:33:44,372 - PaymentBot - ERROR - Ошибка обработки успешного платежа: table payments has no column named currency
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 244, in handle_successful_payment
+    self.db_manager.save_payment(payment_info)
+  File "/root/telegram_bot/src/database/db_manager.py", line 114, in save_payment
+    self.cursor.execute(insert_query, (
+sqlite3.OperationalError: table payments has no column named currency
+2024-12-14 09:39:54,031 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:39:54,032 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:39:54,032 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:40:08,566 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:40:08,567 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:40:08,568 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:40:23,866 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 09:40:23,932 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 09:40:48,257 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-14 09:40:48,262 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 09:40:48,262 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-14 09:40:48,262 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-14 09:40:48,263 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x79f3fe88a360>], 'start_parameter': 'payment'}
+2024-12-14 09:40:48,322 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 09:41:12,930 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067202081434801
+2024-12-14 09:41:12,936 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-14 09:41:12,937 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067202081434801
+2024-12-14 09:41:26,713 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-14 09:41:26,715 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2eef5869-000f-5000-a000-17c985517cfa', 'telegram_payment_charge_id': '8021225335_6916276950_31671', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 14, 9, 41, 26, 715728)}
+2024-12-14 09:41:26,720 - PaymentBot - ERROR - Ошибка обработки успешного платежа: no such column: paid_generations
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 244, in handle_successful_payment
+    self.db_manager.save_payment(payment_info)
+  File "/root/telegram_bot/src/database/db_manager.py", line 144, in save_payment
+    self.cursor.execute(update_query, (
+sqlite3.OperationalError: no such column: paid_generations
+2024-12-14 09:45:45,393 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:45:45,394 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:45:45,394 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:45:58,101 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 09:45:58,244 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 09:46:02,262 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-14 09:46:02,265 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 09:46:02,266 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-14 09:46:02,267 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-14 09:46:02,267 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7593ce1b49b0>], 'start_parameter': 'payment'}
+2024-12-14 09:46:02,449 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 09:46:55,054 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067201105209024
+2024-12-14 09:46:55,058 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-14 09:46:55,059 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067201105209024
+2024-12-14 09:47:07,514 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-14 09:47:07,523 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2eef59bf-000f-5000-8000-146b99f5166b', 'telegram_payment_charge_id': '8021225335_6916276950_31679', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 14, 9, 47, 7, 523788)}
+2024-12-14 09:47:07,532 - PaymentBot - ERROR - Ошибка обработки успешного платежа: no such column: paid_generations
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 244, in handle_successful_payment
+    self.db_manager.save_payment(payment_info)
+  File "/root/telegram_bot/src/database/db_manager.py", line 146, in save_payment
+    self.cursor.execute(update_query, (
+sqlite3.OperationalError: no such column: paid_generations
+2024-12-14 09:52:37,635 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:52:37,636 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:52:37,637 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:53:44,679 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:53:44,680 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:53:44,681 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:54:34,538 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 09:54:34,714 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 09:54:42,910 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-14 09:54:42,910 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 09:54:42,910 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-14 09:54:42,910 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-14 09:54:42,911 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x75d2b218ce90>], 'start_parameter': 'payment'}
+2024-12-14 09:54:43,160 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 09:55:02,823 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067201415430171
+2024-12-14 09:55:02,830 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-14 09:55:02,832 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067201415430171
+2024-12-14 09:55:17,268 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-14 09:55:17,270 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2eef5ba7-000f-5000-b000-1561db998d94', 'telegram_payment_charge_id': '8021225335_6916276950_31685', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 14, 9, 55, 17, 270682)}
+2024-12-14 09:55:17,277 - PaymentBot - INFO - Платёж сохранен в базе данных
+2024-12-14 09:55:17,278 - PaymentBot - ERROR - Ошибка обработки успешного платежа: 'DatabaseManager' object has no attribute 'add_generations'
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 248, in handle_successful_payment
+    self.db_manager.add_generations(message.from_user.id, plan['generations'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabaseManager' object has no attribute 'add_generations'
+2024-12-14 09:59:01,546 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 09:59:01,547 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 09:59:01,547 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 09:59:07,891 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 09:59:08,013 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 09:59:10,650 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-14 09:59:10,650 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 09:59:10,650 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-14 09:59:10,650 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-14 09:59:10,651 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x776467186780>], 'start_parameter': 'payment'}
+2024-12-14 09:59:10,874 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 09:59:23,368 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 09:59:23,488 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 09:59:25,313 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-14 09:59:25,315 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 09:59:25,315 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-14 09:59:25,316 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-14 09:59:25,316 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x776467186900>], 'start_parameter': 'payment'}
+2024-12-14 09:59:25,381 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 09:59:44,832 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067199794243896
+2024-12-14 09:59:44,836 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-14 09:59:44,836 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067199794243896
+2024-12-14 09:59:58,987 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-14 09:59:58,997 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2eef5cc1-000f-5000-8000-18f817d8cb0e', 'telegram_payment_charge_id': '8021225335_6916276950_31697', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 14, 9, 59, 58, 997729)}
+2024-12-14 09:59:59,012 - PaymentBot - INFO - Платёж сохранен в базе данных
+2024-12-14 09:59:59,016 - PaymentBot - INFO - Генерации начислены пользователю 6916276950
+2024-12-14 09:59:59,089 - PaymentBot - INFO - Успешное завершение обработки платежа для пользователя 6916276950
+2024-12-14 10:02:45,724 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 10:02:45,891 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 10:21:17,020 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-14 10:21:17,025 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 10:21:17,025 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-14 10:21:17,026 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-14 10:21:17,026 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x77646831cc80>], 'start_parameter': 'payment'}
+2024-12-14 10:21:17,346 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 10:21:19,003 - PaymentBot - INFO - Выбран тарифный план: Премиум
+2024-12-14 10:21:19,006 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-14 10:21:19,007 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Премиум
+2024-12-14 10:21:19,007 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Премиум
+2024-12-14 10:21:19,008 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Премиум', 'description': 'Тариф Премиум на 300 генераций', 'invoice_payload': 'tariff_Премиум', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x776467ad77d0>], 'start_parameter': 'payment'}
+2024-12-14 10:21:19,170 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-14 10:53:44,876 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 10:53:44,877 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 10:53:44,877 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 11:01:34,003 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-14 11:01:34,187 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-14 11:19:18,556 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-14 11:19:18,556 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-14 11:19:18,556 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-14 15:06:31,718 - PaymentBot - INFO - Показ тарифов для пользователя 77532705
+2024-12-14 15:06:31,895 - PaymentBot - INFO - Тарифы успешно показаны пользователю 77532705
+2024-12-15 09:02:47,169 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 09:02:47,176 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 09:02:47,177 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 09:05:03,032 - PaymentBot - INFO - Показ тарифов для пользователя 6592802200
+2024-12-15 09:05:03,116 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6592802200
+2024-12-15 09:12:00,537 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 09:12:00,538 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 09:12:00,538 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 09:19:17,016 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 09:19:17,017 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 09:19:17,018 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 09:50:12,287 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 09:50:12,288 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 09:50:12,292 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 10:21:57,343 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 10:21:57,345 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 10:21:57,345 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 10:22:11,874 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-15 10:22:11,979 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-15 10:22:13,496 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-15 10:22:13,498 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-15 10:22:13,499 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-15 10:22:13,499 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-15 10:22:13,499 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7e50ca303ef0>], 'start_parameter': 'payment'}
+2024-12-15 10:22:13,660 - PaymentBot - ERROR - Ошибка создания счета для пользователя 6916276950: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+Traceback (most recent call last):
+  File "/root/food_naked/src/handlers/payment.py", line 146, in create_invoice
+    self.bot.send_invoice(**invoice_data)
+  File "/root/food_naked/new_venv/lib/python3.12/site-packages/telebot/__init__.py", line 4168, in send_invoice
+    result = apihelper.send_invoice(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/food_naked/new_venv/lib/python3.12/site-packages/telebot/apihelper.py", line 1557, in send_invoice
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/food_naked/new_venv/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/food_naked/new_venv/lib/python3.12/site-packages/telebot/apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+2024-12-15 10:38:07,485 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 10:38:07,486 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 10:38:07,486 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 10:58:06,905 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 10:58:06,906 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 10:58:06,907 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 11:02:06,445 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 11:02:06,445 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 11:02:06,447 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 11:10:35,750 - PaymentBot - INFO - Показ тарифов для пользователя 77532705
+2024-12-15 11:10:35,850 - PaymentBot - INFO - Тарифы успешно показаны пользователю 77532705
+2024-12-15 12:01:00,686 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 12:01:00,687 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 12:01:00,688 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 12:08:36,401 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 12:08:36,402 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 12:08:36,402 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 12:08:47,142 - PaymentBot - INFO - Показ тарифов для пользователя 5270295532
+2024-12-15 12:08:47,299 - PaymentBot - INFO - Тарифы успешно показаны пользователю 5270295532
+2024-12-15 12:08:48,626 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-15 12:08:48,626 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 5270295532
+2024-12-15 12:08:48,627 - PaymentBot - INFO - Пользователь 5270295532 выбрал тариф: Базовый
+2024-12-15 12:08:48,627 - PaymentBot - INFO - Создание счета для пользователя 5270295532, план: Базовый
+2024-12-15 12:08:48,627 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 5270295532, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62099', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x73de780b1370>], 'start_parameter': 'payment'}
+2024-12-15 12:08:48,679 - PaymentBot - ERROR - Ошибка создания счета для пользователя 5270295532: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+Traceback (most recent call last):
+  File "/root/food_naked/src/handlers/payment.py", line 146, in create_invoice
+    self.bot.send_invoice(**invoice_data)
+  File "/root/food_naked/new_venv/lib/python3.12/site-packages/telebot/__init__.py", line 4168, in send_invoice
+    result = apihelper.send_invoice(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/food_naked/new_venv/lib/python3.12/site-packages/telebot/apihelper.py", line 1557, in send_invoice
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/food_naked/new_venv/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/food_naked/new_venv/lib/python3.12/site-packages/telebot/apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+2024-12-15 12:16:45,176 - PaymentBot - ERROR - PAYMENT_PROVIDER_TOKEN не найден в переменных окружения
+2024-12-15 12:20:12,913 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 12:20:12,913 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 12:20:12,914 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 12:20:47,971 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-15 12:20:48,153 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-15 12:20:50,993 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-15 12:20:50,995 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-15 12:20:50,995 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-15 12:20:50,995 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-15 12:20:50,996 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62154', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7d453f98b800>], 'start_parameter': 'payment'}
+2024-12-15 12:20:51,128 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-15 12:21:34,525 - PaymentBot - INFO - Обработка pre-checkout для query_id: 2035067203184117082
+2024-12-15 12:21:34,530 - PaymentBot - INFO - Pre-checkout данные: plan_name=Базовый, amount=29900, user_id=6916276950
+2024-12-15 12:21:34,531 - PaymentBot - INFO - Pre-checkout успешно пройден для query_id: 2035067203184117082
+2024-12-15 12:21:50,687 - PaymentBot - INFO - Обработка успешного платежа от пользователя 6916276950
+2024-12-15 12:21:50,691 - PaymentBot - INFO - Информация о платеже: {'user_id': 6916276950, 'amount': 299.0, 'currency': 'RUB', 'provider_payment_charge_id': '2ef0cf7e-000f-5000-b000-154830814ceb', 'telegram_payment_charge_id': '7696976217_6916276950_31962', 'plan_name': 'Базовый', 'generations_added': 50, 'payment_date': datetime.datetime(2024, 12, 15, 12, 21, 50, 691038)}
+2024-12-15 12:21:50,698 - PaymentBot - INFO - Платёж сохранен в базе данных
+2024-12-15 12:21:50,702 - PaymentBot - INFO - Генерации начислены пользователю 6916276950
+2024-12-15 12:21:50,840 - PaymentBot - INFO - Успешное завершение обработки платежа для пользователя 6916276950
+2024-12-15 12:32:40,049 - PaymentBot - INFO - Показ тарифов для пользователя 236830463
+2024-12-15 12:32:40,266 - PaymentBot - INFO - Тарифы успешно показаны пользователю 236830463
+2024-12-15 13:35:21,775 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-15 13:35:21,775 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-15 13:35:21,775 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-15 14:39:43,086 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-15 14:39:43,188 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-15 14:40:12,469 - PaymentBot - INFO - Показ тарифов для пользователя 5270295532
+2024-12-15 14:40:12,536 - PaymentBot - INFO - Тарифы успешно показаны пользователю 5270295532
+2024-12-17 08:40:48,425 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-17 08:40:48,426 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-17 08:40:48,426 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-17 09:12:26,977 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-17 09:12:26,977 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-17 09:12:26,978 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-17 09:16:04,503 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-17 09:16:04,504 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-17 09:16:04,504 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-17 09:34:34,011 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-17 09:34:34,012 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-17 09:34:34,012 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-17 09:38:40,846 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-17 09:38:40,846 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-17 09:38:40,847 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-17 11:22:27,972 - PaymentBot - INFO - Показ тарифов для пользователя 83004526
+2024-12-17 11:22:28,109 - PaymentBot - INFO - Тарифы успешно показаны пользователю 83004526
+2024-12-17 11:22:33,913 - PaymentBot - INFO - Выбран тарифный план: Премиум
+2024-12-17 11:22:33,914 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 83004526
+2024-12-17 11:22:33,914 - PaymentBot - INFO - Пользователь 83004526 выбрал тариф: Премиум
+2024-12-17 11:22:33,914 - PaymentBot - INFO - Создание счета для пользователя 83004526, план: Премиум
+2024-12-17 11:22:33,914 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 83004526, 'title': 'Тариф Премиум', 'description': 'Тариф Премиум на 300 генераций', 'invoice_payload': 'tariff_Премиум', 'provider_token': '390540012:LIVE:62154', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7fb575f52ed0>], 'start_parameter': 'payment'}
+2024-12-17 11:22:33,992 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 83004526
+2024-12-18 12:41:44,777 - PaymentBot - INFO - Показ тарифов для пользователя 53698235
+2024-12-18 12:41:44,930 - PaymentBot - INFO - Тарифы успешно показаны пользователю 53698235
+2024-12-18 12:42:02,252 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-18 12:42:02,254 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 53698235
+2024-12-18 12:42:02,255 - PaymentBot - INFO - Пользователь 53698235 выбрал тариф: Базовый
+2024-12-18 12:42:02,255 - PaymentBot - INFO - Создание счета для пользователя 53698235, план: Базовый
+2024-12-18 12:42:02,255 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 53698235, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '390540012:LIVE:62154', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7fb5765958b0>], 'start_parameter': 'payment'}
+2024-12-18 12:42:02,332 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 53698235
+2024-12-19 10:19:44,617 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-19 10:19:44,618 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-19 10:19:44,618 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 09:57:08,485 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 09:57:08,486 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 09:57:08,486 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:08:01,697 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:08:01,697 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:08:01,697 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:08:48,438 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:08:48,439 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:08:48,439 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:09:32,761 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:09:32,762 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:09:32,762 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:11:10,192 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:11:10,193 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:11:10,192 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:11:10,194 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:11:10,194 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:11:10,194 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:13:23,373 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:13:23,373 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:13:23,373 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:13:29,868 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:13:29,869 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:13:29,870 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:13:29,876 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:13:29,877 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:13:29,878 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:15:25,480 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:15:25,481 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:15:25,481 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:15:33,270 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:15:33,270 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:15:33,270 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:15:33,271 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:15:33,272 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:15:33,273 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:15:33,298 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:15:33,299 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:15:33,299 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-20 10:31:36,591 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-20 10:31:36,591 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-20 10:31:36,592 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-21 04:31:38,369 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-21 04:31:38,370 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-21 04:31:38,371 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-25 14:49:58,617 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-25 14:49:58,625 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-25 14:49:58,626 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-25 14:50:22,874 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-25 14:50:22,980 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-28 15:19:24,567 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-28 15:19:24,569 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-28 15:19:24,569 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-31 00:51:47,283 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-31 00:51:47,289 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-31 00:51:47,290 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2025-01-20 17:28:26,661 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2025-01-20 17:28:26,663 - PaymentBot - INFO - Регистрация обработчиков платежей
+2025-01-20 17:28:26,663 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2025-01-21 16:32:02,502 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2025-01-21 16:36:28,332 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2025-01-21 16:36:28,333 - PaymentBot - INFO - Регистрация обработчиков платежей
+2025-01-21 16:36:28,333 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2025-01-21 16:52:35,272 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2025-01-21 16:52:35,275 - PaymentBot - INFO - Регистрация обработчиков платежей
+2025-01-21 16:52:35,276 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2025-01-21 16:56:23,012 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2025-01-21 16:56:23,014 - PaymentBot - INFO - Регистрация обработчиков платежей
+2025-01-21 16:56:23,018 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы

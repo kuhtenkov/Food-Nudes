@@ -1,0 +1,11 @@
+./start_bot.sh: line 7: 187967 Killed                  nohup python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 7: 187961 Killed                  nohup python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 7: 187982 Killed                  nohup python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 7: 187983 Killed                  nohup python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 7: 188016 Killed                  nohup python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 7: 188015 Killed                  nohup python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 19: 188009 Killed                  python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 19: 188041 Killed                  python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 7: 188048 Killed                  nohup python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 19: 188050 Killed                  python3 src/main.py > bot.log 2>&1
+./start_bot.sh: line 7: 188049 Killed                  nohup python3 src/main.py > bot.log 2>&1

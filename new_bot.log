@@ -1,0 +1,12 @@
+nohup: ignoring input
+2024-12-15 10:03:54,727 - handlers.meal_analysis - ERROR - Failed to initialize OpenAI client: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+Traceback (most recent call last):
+  File "/root/food_naked/src/main.py", line 45, in <module>
+    meal_handler = MealAnalysisHandler(bot, db_manager)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/food_naked/src/handlers/meal_analysis.py", line 15, in __init__
+    self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/food_naked/new_venv/lib/python3.12/site-packages/openai/_client.py", line 101, in __init__
+    raise OpenAIError(
+openai.OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable

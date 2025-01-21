@@ -1,0 +1,234 @@
+2024-12-11 16:55:37,469 - PaymentBot - ERROR - PAYMENT_PROVIDER_TOKEN не найден в переменных окружения
+2024-12-11 16:57:43,027 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-11 16:57:43,048 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-11 16:57:43,048 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-11 17:00:00,069 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-11 17:00:00,072 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-11 17:00:00,072 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-11 17:02:58,700 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-11 17:02:58,769 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-11 17:03:00,676 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-11 17:03:00,678 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-11 17:03:00,678 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-11 17:03:00,679 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-11 17:03:00,680 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': 'TEST:123456789', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7fa49de99df0>], 'start_parameter': 'payment'}
+2024-12-11 17:03:00,749 - PaymentBot - ERROR - Ошибка создания счета для пользователя 6916276950: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 146, in create_invoice
+    self.bot.send_invoice(**invoice_data)
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/__init__.py", line 4168, in send_invoice
+    result = apihelper.send_invoice(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 1557, in send_invoice
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+2024-12-11 17:05:15,190 - PaymentBot - INFO - Показ тарифов для пользователя 77532705
+2024-12-11 17:05:15,396 - PaymentBot - INFO - Тарифы успешно показаны пользователю 77532705
+2024-12-11 17:05:16,932 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-11 17:05:16,934 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 77532705
+2024-12-11 17:05:16,935 - PaymentBot - INFO - Пользователь 77532705 выбрал тариф: Базовый
+2024-12-11 17:05:16,935 - PaymentBot - INFO - Создание счета для пользователя 77532705, план: Базовый
+2024-12-11 17:05:16,936 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 77532705, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': 'TEST:123456789', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7fa49b37f830>], 'start_parameter': 'payment'}
+2024-12-11 17:05:17,014 - PaymentBot - ERROR - Ошибка создания счета для пользователя 77532705: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 146, in create_invoice
+    self.bot.send_invoice(**invoice_data)
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/__init__.py", line 4168, in send_invoice
+    result = apihelper.send_invoice(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 1557, in send_invoice
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+2024-12-11 17:09:07,496 - PaymentBot - INFO - Показ тарифов для пользователя 77532705
+2024-12-11 17:09:07,569 - PaymentBot - INFO - Тарифы успешно показаны пользователю 77532705
+2024-12-12 04:09:33,094 - PaymentBot - INFO - Показ тарифов для пользователя 77532705
+2024-12-12 04:09:33,312 - PaymentBot - INFO - Тарифы успешно показаны пользователю 77532705
+2024-12-12 06:01:02,373 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-12 06:01:02,374 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 77532705
+2024-12-12 06:01:02,375 - PaymentBot - INFO - Пользователь 77532705 выбрал тариф: Базовый
+2024-12-12 06:01:02,376 - PaymentBot - INFO - Создание счета для пользователя 77532705, план: Базовый
+2024-12-12 06:01:02,376 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 77532705, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': 'TEST:123456789', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7fa49bd77fb0>], 'start_parameter': 'payment'}
+2024-12-12 06:01:02,442 - PaymentBot - ERROR - Ошибка создания счета для пользователя 77532705: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 146, in create_invoice
+    self.bot.send_invoice(**invoice_data)
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/__init__.py", line 4168, in send_invoice
+    result = apihelper.send_invoice(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 1557, in send_invoice
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+2024-12-12 10:56:19,965 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 10:56:19,971 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 10:56:19,972 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-12 10:57:17,541 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 10:59:08,763 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-12 10:59:08,990 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-12 10:59:10,994 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-12 10:59:10,996 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-12 10:59:10,996 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-12 10:59:10,998 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-12 10:59:10,998 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': 'TEST:123456789', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7a2850d88830>], 'start_parameter': 'payment'}
+2024-12-12 10:59:11,108 - PaymentBot - ERROR - Ошибка создания счета для пользователя 6916276950: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 146, in create_invoice
+    self.bot.send_invoice(**invoice_data)
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/__init__.py", line 4168, in send_invoice
+    result = apihelper.send_invoice(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 1557, in send_invoice
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+2024-12-12 11:30:31,027 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 11:30:31,033 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 11:30:31,033 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-12 11:39:05,907 - PaymentBot - INFO - Показ тарифов для пользователя 77532705
+2024-12-12 11:39:05,977 - PaymentBot - INFO - Тарифы успешно показаны пользователю 77532705
+2024-12-12 11:39:08,066 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-12 11:39:08,067 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 77532705
+2024-12-12 11:39:08,067 - PaymentBot - INFO - Пользователь 77532705 выбрал тариф: Базовый
+2024-12-12 11:39:08,070 - PaymentBot - INFO - Создание счета для пользователя 77532705, план: Базовый
+2024-12-12 11:39:08,070 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 77532705, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': 'TEST:123456789', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x729df6ac5f70>], 'start_parameter': 'payment'}
+2024-12-12 11:39:08,266 - PaymentBot - ERROR - Ошибка создания счета для пользователя 77532705: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 146, in create_invoice
+    self.bot.send_invoice(**invoice_data)
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/__init__.py", line 4168, in send_invoice
+    result = apihelper.send_invoice(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 1557, in send_invoice
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/telegram_bot/venv/lib/python3.12/site-packages/telebot/apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: PAYMENT_PROVIDER_INVALID
+2024-12-12 11:47:52,447 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 11:47:52,452 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 11:47:52,454 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-12 11:51:23,741 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-12 11:51:23,932 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-12 11:51:26,239 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-12 11:51:26,240 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-12 11:51:26,242 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-12 11:51:26,242 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-12 11:51:26,242 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7f81734fd0d0>], 'start_parameter': 'payment'}
+2024-12-12 11:51:26,327 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-12 11:54:08,689 - PaymentBot - INFO - Показ тарифов для пользователя 198941550
+2024-12-12 11:54:08,991 - PaymentBot - INFO - Тарифы успешно показаны пользователю 198941550
+2024-12-12 11:54:10,613 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-12 11:54:10,615 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 198941550
+2024-12-12 11:54:10,616 - PaymentBot - INFO - Пользователь 198941550 выбрал тариф: Базовый
+2024-12-12 11:54:10,616 - PaymentBot - INFO - Создание счета для пользователя 198941550, план: Базовый
+2024-12-12 11:54:10,616 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 198941550, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x7f817517e150>], 'start_parameter': 'payment'}
+2024-12-12 11:54:10,689 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 198941550
+2024-12-12 12:03:43,673 - PaymentBot - INFO - Показ тарифов для пользователя 77532705
+2024-12-12 12:03:43,980 - PaymentBot - INFO - Тарифы успешно показаны пользователю 77532705
+2024-12-12 12:09:33,123 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 12:09:33,127 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 12:09:33,128 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-12 12:31:52,248 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-12 12:31:52,434 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-12 12:53:55,544 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 12:53:55,550 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 12:53:55,551 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-12 13:19:00,495 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 13:19:00,500 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 13:19:00,500 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-12 13:23:13,323 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 13:23:13,328 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 13:23:13,328 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-12 15:55:34,434 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 15:55:34,440 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 15:55:34,441 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-12 16:05:53,108 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 16:05:53,115 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 16:05:53,116 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-12 16:51:10,675 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-12 16:51:10,679 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-12 16:51:10,680 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 06:09:00,427 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 06:09:00,434 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 06:09:00,435 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 06:22:25,575 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 06:33:10,712 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 06:38:27,597 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 06:38:27,598 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 06:38:27,599 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 06:41:26,336 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 06:41:26,338 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 06:41:26,338 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 06:42:05,478 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-13 06:42:05,481 - PaymentBot - ERROR - Ошибка при показе тарифов пользователю 6916276950: 'DatabaseManager' object has no attribute 'check_user_generations'
+Traceback (most recent call last):
+  File "/root/telegram_bot/src/handlers/payment.py", line 88, in show_tariff_plans
+    free_gens, total_gens = self.db_manager.check_user_generations(message.from_user.id)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabaseManager' object has no attribute 'check_user_generations'
+2024-12-13 06:44:07,585 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 06:44:07,587 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 06:44:07,588 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 06:46:10,445 - PaymentBot - INFO - Показ тарифов для пользователя 6916276950
+2024-12-13 06:46:10,534 - PaymentBot - INFO - Тарифы успешно показаны пользователю 6916276950
+2024-12-13 06:46:12,357 - PaymentBot - INFO - Выбран тарифный план: Базовый
+2024-12-13 06:46:12,359 - PaymentBot - INFO - Обработка выбора тарифа для пользователя 6916276950
+2024-12-13 06:46:12,359 - PaymentBot - INFO - Пользователь 6916276950 выбрал тариф: Базовый
+2024-12-13 06:46:12,359 - PaymentBot - INFO - Создание счета для пользователя 6916276950, план: Базовый
+2024-12-13 06:46:12,360 - PaymentBot - INFO - Отправка инвойса с данными: {'chat_id': 6916276950, 'title': 'Тариф Базовый', 'description': 'Тариф Базовый на 50 генераций', 'invoice_payload': 'tariff_Базовый', 'provider_token': '381764678:TEST:103486', 'currency': 'RUB', 'prices': [<telebot.types.LabeledPrice object at 0x78f2a6683800>], 'start_parameter': 'payment'}
+2024-12-13 06:46:12,428 - PaymentBot - INFO - Инвойс успешно отправлен пользователю 6916276950
+2024-12-13 06:53:31,098 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 06:53:31,100 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 06:53:31,100 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 06:59:51,056 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 06:59:51,057 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 06:59:51,058 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 07:01:35,495 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 07:01:35,497 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 07:01:35,497 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 07:06:46,488 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 07:06:46,490 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 07:06:46,490 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 07:09:13,839 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 07:09:13,841 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 07:09:13,842 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 07:11:41,552 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 07:11:41,553 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 07:11:41,554 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 07:13:11,616 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 07:13:11,616 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 07:13:11,617 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 07:22:23,271 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 07:22:23,273 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 07:22:23,274 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 07:24:34,326 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 07:24:34,328 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 07:24:34,329 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
+2024-12-13 07:27:45,136 - PaymentBot - INFO - PaymentHandler успешно инициализирован
+2024-12-13 07:27:45,137 - PaymentBot - INFO - Регистрация обработчиков платежей
+2024-12-13 07:27:45,138 - PaymentBot - INFO - Обработчики платежей успешно зарегистрированы
